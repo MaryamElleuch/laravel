@@ -10,6 +10,6 @@ class Article extends Model
     use HasFactory;
     protected $fillable =["designation" , "marque" , "reference" , "qtestock" , "prix" , "scategorieID"] ;
     public function scategorie(){
-        return $this -> belongsTo(scategorie::class , "scategorieID");
+        return $this -> belongsTo(Scategorie::class , "scategorieID");
     }
 }
